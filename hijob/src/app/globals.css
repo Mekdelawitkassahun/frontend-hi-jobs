@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Breakpoints matching Figma frames */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 860px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1440px;
+  --breakpoint-2xl: 1920px;
+
+  /* ── Design-token colours ── */
+  --color-white:        #FFFFFF;
+  --color-card:         #FFFFFF;
+  --color-dark:         #242121;
+  --color-blue:         #2688FA;
+  --color-teal:         #02DEDD;
+  --color-page:         #F0F2F6;
+  --color-feed:         #4D5A68;
+  --color-green:        #ACD844;
+  --color-border:       #BCC5E0;
+
+  /* aliases used in JSX */
+  --color-primary:      #2688FA;
+  --color-primary-dark: #1a6fd4;
+  --color-muted:        #4D5A68;
+
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--color-page);
+  color: var(--color-dark);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
